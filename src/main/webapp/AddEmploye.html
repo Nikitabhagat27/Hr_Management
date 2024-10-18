@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee Detail</title>
+    <style>
+        body {
+            background-color: #87CEFA; /* Sky blue background */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 50px;
+            background-color: #4682B4; /* Medium blue color for the box */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            padding: 20px; /* Padding inside the form */
+            color: white; /* White text for better contrast */
+        }
+        h1 {
+            text-align: center;
+            color: white; /* White text color for the heading */
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        label {
+            width: 45%;
+            margin-bottom: 10px;
+            color: white; /* White text for labels */
+        }
+        input[type="text"], input[type="email"], input[type="date"], input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners for input fields */
+        }
+        .buttons {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .buttons input {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 5px; /* Rounded corners for buttons */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        .buttons input:hover {
+            background-color: #444; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Employee Detail</h1>
+        <form>
+            <label>
+                Name
+                <input type="text" name="name" required>
+            </label>
+            <label>
+                Email
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Contact Number
+                <input type="text" name="contact" required>
+            </label>
+            <label>
+                Job Role
+                <input type="text" name="job_role" required>
+            </label>
+            <label>
+                Date of Joining
+                <input type="date" name="joining_date" required>
+            </label>
+            <label>
+                Password
+                <input type="password" name="password" required>
+            </label>
+            <div class="buttons">
+                <input type="button" value="Add Details">
+                <input type="button" value="Back">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

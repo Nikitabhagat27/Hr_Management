@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #e5e5e5, #ffffff); /* Gradient from grayish to white */
+            background-image: url('https://www.transparenttextures.com/patterns/paper.png'); /* Light texture */
+            background-size: cover; /* Cover the entire body */
+        }
+
+        h1 {
+            color: #0000ff; /* blue text color */
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #0000ff; /* blue border color */
+            background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-top: 50px;
+            border-radius: 8px; /* Rounded corners for form */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #000000; /* black text color */
+        }
+
+        input[type="text"], input[type="date"], input[type="time"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #0000ff; /* blue border color */
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #ffffff; /* white background color */
+            color: #000000; /* black text color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Attendance</h1>
+    <form>
+        <label for="empid">Employee Name:</label><br>
+        <input type="number" id="empid" name="empid"><br>
+        <label for="name">Email Id:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br>
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time"><br>
+    </form>
+</body>
+</html>

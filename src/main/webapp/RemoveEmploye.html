@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0e68c;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .content {
+            background-color: #f0e68c;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .details {
+            margin-right: 50px;
+        }
+        .details label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .details input {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .buttons button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+        .buttons button:hover {
+            background-color: white; /* Change background color to white on hover */
+            color: black; /* Change text color to black on hover */
+        }
+        .image-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .image-container img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        function deleteEmployee() {
+            // Placeholder for delete functionality
+            alert('Employee deleted successfully.');
+        }
+
+        function goBack() {
+            // Placeholder for back functionality
+            window.history.back(); // Navigate back to the previous page
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="details">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter name" />
+
+                <label for="phone">Contact Number</label>
+                <input type="text" id="phone" placeholder="Enter contact number" />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter email" />
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" />
+                
+                <div class="buttons">
+                    <button onclick="deleteEmployee()">Delete</button>
+                    <button onclick="goBack()">Back</button>
+                </div>
+            </div>
+            <div class="image-container">
+                <img alt="Trash can icon" src="https://storage.googleapis.com/a1aa/image/DHQrHXRrNQ5EBhjoBWdb8rrvvmHFEQ2ixynLVmdzz9RBfrzJA.jpg" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

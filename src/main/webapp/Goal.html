@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Description Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #1E90FF; /* Blue color for header */
+            color: white;
+        }
+        td {
+            background-color: #D3D3D3; /* Light gray for table cells */
+        }
+        input[type="text"], input[type="date"] {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #000000; /* Black button */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        .submit-btn:hover {
+            background-color: #333333; /* Darker black on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th>Goal Description</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+              
+            </tr>
+            <!-- Row 1 -->
+            <tr>
+                <td><input type="text" name="goal_description_1" placeholder="Enter goal 1 description" required></td>
+                <td><input type="date" name="start_date_1" required></td>
+                <td><input type="date" name="end_date_1" required></td>
+              
+            </tr>
+          
+            
+        </table>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+</body>
+</html>
